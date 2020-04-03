@@ -1,2 +1,56 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 
+:root {
+    --color-white: #f3f3f3;
+    --color-dark-blue: #1b1b32;
+    --color-green: #37af65;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-white)
+    margin: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /*originally had z-index as 1 but this was causing issues with content behind the background*/
+    z-index: -1;
+    background: var(--color-dark-blue);
+    background-image: linear-gradient(100deg, rgba(58, 58, 158, 0.8),
+    rgba(136, 136, 206, 0.7));
+    background-image: url(https://www.nist.gov/sites/default/files/images/2018/08/17/shutterstock_252413188.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+h1,
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
