@@ -11,7 +11,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: var(--color-white)
+    color: var(--color-white);
     margin: 0;
 }
 
@@ -53,4 +53,65 @@ label {
     align-items: center;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+    margin: 0;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    width:100%;
+    margin: 4rem auto 0 auto;
+}
+
+@media (min-width: 575px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 760px) {
+    .container {
+        max-width: 740px;
+    }
+}
+
+#description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*form code*/
+
+form {
+    z-index: 1;
+    background: var(--color-dark-blue);
+    padding: 2.5rem 0.5rem;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+}
+
+.form-layout {
+    display: block;
+    width: 75%;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 5%;
 }

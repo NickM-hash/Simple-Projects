@@ -7,32 +7,58 @@
     <body>
         <div class="container">
             <header class="header">
-                <h1 id="title">Nick's Survey Form</h1>
-                <p id="description">Here goes a first attempt</p>
+                <h1 id="title" class="text-center">Nick's Survey Form</h1>
+                <p id="description" class="text-center">Here goes a first attempt</p>
             </header>
             <form id="survey-form" action="/your-url-goes-here">
                 <!--url needs adding for data output of the form-->
                 <div class="form-group">
                     <label id="name-label" for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required />
+                    <input 
+                        type="text" 
+                        name="name" 
+                        id="name" 
+                        placeholder="Enter your name" 
+                        required 
+                        />
                 </div>
                 <div class="form-group">
                     <label id="email-label" for="email">Email</label>
-                    <input type="text" name="email" id="email" placeholder="Enter your email" required>
+                    <input 
+                        type="text" 
+                        name="email" 
+                        id="email" 
+                        placeholder="Enter your email" 
+                        class="form-layout"
+                        required
+                        >
                     <!--I left out the slash to see what would happen-->
                 </div>  
                 <div class="form-group">
                     <label id="birth-date-label" for="birth-date">Birth date</label>
-                    <input type="date" name="birth-date" id="birth-date" placeholder="Birth date" required />
+                    <input 
+                        type="date" 
+                        name="birth-date" 
+                        id="birth-date" 
+                        placeholder="Birth date" 
+                        class="form-layout"
+                        required 
+                        />
                 </div>
                 <div class="form-group">
                     <label id="personality-label" for="personality">Your Personality</label>
-                    <select type="dropdown" name="personality" id="personality" required>
-                        <option disabled selected value>Select personality type</option>
-                        <option value="cool">Cool</option>
-                        <option value="somewhat cool">Somewhat cool</option>
-                        <option value="awesome">Awesome</option>
-                        <option value="no clue">I have no idea what is going on</option>
+                    <select 
+                        type="dropdown" 
+                        name="personality" 
+                        id="personality" 
+                        class="form-layout"
+                        required
+                        >
+                            <option disabled selected value>Select personality type</option>
+                            <option value="cool">Cool</option>
+                            <option value="somewhat cool">Somewhat cool</option>
+                            <option value="awesome">Awesome</option>
+                            <option value="no clue">I have no idea what is going on</option>
                     </select>
                 </div>
                 <div class="form-group">
