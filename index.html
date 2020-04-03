@@ -35,6 +35,87 @@
                         <option value="no clue">I have no idea what is going on</option>
                     </select>
                 </div>
+                <div class="form-group">
+                    <p>Would you recommend my skillset?</p>
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="recommendation" 
+                            value="for-sure" 
+                            class="input-radio"
+                            checked
+                            />For sure
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="recommendation"
+                            value="unsure"
+                            class="input-radio"
+                            />Unsure at this time
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="recommendation"
+                            value="no-recommendation"
+                            class="input-radio"
+                            checked
+                            />You need a lot more work
+                    </label>   
+                </div>
+                <div class="form-group">
+                    <p>What would you like to see me improve further?</p>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="further-work"
+                            class="input-checkbox"
+                            value="html"
+                            />HTML5
+                    </label>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="further-work"
+                            class="input-checkbox"
+                            value="css"
+                            />CSS
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="further-work"
+                            class="input-checkbox"
+                            value="javascript"
+                            />Javascript
+                    </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="further-work"
+                            class="input-checkbox"
+                            value="other-languages"
+                            />Other programming languages
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions both on the last checkbox and in general?</p>
+                    <textarea
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter your comments here..."
+                        ></textarea>
+                </div>
+                <div class="form-group">
+                    <button 
+                        type="submit"
+                        id="submit"
+                        class="submit-button">
+                        Submit
+                    </button>
+                </div>
             </form>
         </div>
     </body>
