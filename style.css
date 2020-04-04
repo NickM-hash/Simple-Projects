@@ -97,8 +97,7 @@ button {
 
 form {
     z-index: 1;
-    background: var(--color-dark-blue);
-    opacity: 0.9;
+    background-color: rgba(27, 27, 50, 0.9);
     padding: 2.5rem 0.5rem;
     border-radius: 15px;
 }
