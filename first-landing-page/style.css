@@ -12,30 +12,54 @@
     margin: 0;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas: 
-    "header header header header header"
-    "image image image image image"
-    ". features features features ."
-    ". video video video ."
-    ". pricing pricing pricing ."
-    "footer footer footer footer footer";
+    "header header header"
+    "image image image"
+    ". features ."
+    ". video ."
+    ". pricing ."
+    "footer footer footer";
 }
 
 .header {
     grid-area: header;
-    background-color: blue;
+    background-color: #eee;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
 }
 
 .image-box {
     grid-area: image;
-    background-color: red;
+    background-image: url(https://previews.123rf.com/images/sibfilm/sibfilm1905/sibfilm190500148/122845123-factory-for-the-production-of-robots-modern-robotic-developments-the-disassembled-robot-waves-his-ha.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
 }
 
 .splash-box {
     grid-area: image;
     background-color: coral;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-width: 1rem;
 }
 
 .features {
@@ -48,6 +72,26 @@
 
 .pricing {
     grid-area: pricing;
+    align-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "price1 price2 price3"
+    ;
+}
+
+#price1 {
+    grid-area: price1;
+}
+
+#price2 {
+    grid-area: price2;
+}
+
+#price3 {
+    grid-area: price3;
 }
 
 .footer {
