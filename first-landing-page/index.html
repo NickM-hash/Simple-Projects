@@ -3,74 +3,148 @@
     <head>
         <title>Product Landing Page</title>
         <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
         <header>
-            <div class="header">
-                <h1 id="title">Jake Macklins</h1>
-                <nav id="links">
-                    <ul>
-                        <li>Features</li>
-                        <li>How it works</li>
-                        <li>Pricing</li>
-                    </ul>
-                </nav>
+            <div class="row" id="header">
+                <div class="col-md-6">
+                    <h1 id="title">Jake Macklins</h1>
+                </div>
+                <div class="col-md-6 my-auto">
+                    <nav id="links">
+                        <ul>
+                            <li><a href="#features-title">Features</a></li>
+                            <li><a href="#video-title">How it works</a></li>
+                            <li><a href="#pricing-title">Pricing</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
-        <div class="image-box">
-            <div class="splash-box">
+        <div class="row" id="image-box">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6" id="splash-box">
                 <h2 id="splash-title">Handcrafted, home-made Macklins</h2>
                 <form id="form" action="insertactionhere">
-                <label id="email-label">
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="enter your email address"
-                        required
+                    <label id="email-label">
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="enter your email address"
+                            required
                         />
-                </label>
-                <label id="splash-button">
-                    <button
-                        type="submit"
-                        id="submit"
-                        class="submit-button">
-                        GET STARTED
-                    </button>
-                </label>
+                    </label>
+                    <label id="splash-button">
+                        <button 
+                            type="button" 
+                            class="btn btn-success">
+                            GET STARTED
+                        </button>
+                    </label>
                 </form>
             </div>
+            <div class="col-md-3">
+            </div>
         </div>
-        <div class="features">
-            <div class="feature-1">
+        <br>
+        <div class="row">
+            <div class="col-md-12" id="features-title">
+                <h1>Features</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1">
+                <svg class="bi bi-award" width="4em" height="4em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M9.669.864L8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193l-1.51-.229L8 1.126l-1.355.702-1.51.229-.684 1.365-1.086 1.072L3.614 6l-.25 1.506 1.087 1.072.684 1.365 1.51.229L8 10.874l1.356-.702 1.509-.229.684-1.365 1.086-1.072L12.387 6l.248-1.506-1.086-1.072-.684-1.365z" clip-rule="evenodd"/>
+                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                  </svg>
+            </div>
+            <div class="col-md-7">
                 <h2 id="premium">Premium Materials</h2>
                 <p id="premium-details">We use only the finest Macklins in our production</p>
             </div>
-            <div class="feature-2">
+            <div class="col-md-2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1">
+                <svg class="bi bi-bag" width="4em" height="4em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 5H2v9a1 1 0 001 1h10a1 1 0 001-1V5zM1 4v10a2 2 0 002 2h10a2 2 0 002-2V4H1z" clip-rule="evenodd"/>
+                    <path d="M8 1.5A2.5 2.5 0 005.5 4h-1a3.5 3.5 0 117 0h-1A2.5 2.5 0 008 1.5z"/>
+                  </svg>
+            </div>
+            <div class="col-md-7">
                 <h2 id="shipping">Fast Shipping</h2>
                 <p id="shipping details">We make sure you receive your Macklin as soon as we have finished manufacturing it. We also provide free returns if you are not satisfied</p>
             </div>
-            <div class="feature-3">
+            <div class="col-md-2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1">
+                <svg class="bi bi-check-box" width="4em" height="4em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h10a1.5 1.5 0 001.5-1.5V8a.5.5 0 00-1 0v5a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V3a.5.5 0 01.5-.5h8a.5.5 0 000-1H3A1.5 1.5 0 001.5 3v10z" clip-rule="evenodd"/>
+                  </svg>
+            </div>
+            <div class="col-md-7">
                 <h2 id="quality">Quality Assurance</h2>
                 <p id="quality-details">We quality check every Macklin for damages or faults prior to shipping</p>
+            </div>
+            <div class="col-md-2">
             </div>  
         </div>
-        <div class="how-it-works">
-            <!--insert code for youtube vid embedded here-->
-        </div>
-        <div class="pricing">
-            <div class="simple-price">
-                <h3 id="simple-macklin">Simple Macklin</h3>
-                <p id="price-1">$600</p>
-                <p id="simple-text">
-                    Lorem ipsum.
-                    Lorem ipsum.
-                    Lorem ipsum dolor.
-                    Lorem ipsum.
-                </p>
+        <br>
+        <div class="row">
+            <div class="col-md-12" id="video-title">
+                <h1>See some Macklins shooting</h1>
             </div>
-            <div class="classic-price">
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8 text-center" id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/y3RIHnK0_NE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12" id="pricing-title">
+                <h1>Pricing</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row" id="pricing">
+            <div class="col-md-4">
+                <div class="col-md-12" id="p1">
+                    <h3 id="simple-macklin">Simple Macklin</h3>
+                    <p id="price-1">$600</p>
+                    <p id="simple-text">
+                        Lorem ipsum.
+                        Lorem ipsum.
+                        Lorem ipsum dolor.
+                        Lorem ipsum.
+                    </p>
+                    <button type="button" class="btn btn-dark">Explore</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12" id="p2">
                 <h3 id="classic-macklin">Classic Macklin</h3>
                 <p id="price-2">$850</p>
                 <p id="classic-text">
@@ -79,8 +153,11 @@
                     Lorem ipsum dolor.
                     Lorem ipsum.
                 </p>
+                <button type="button" class="btn btn-dark">Explore</button>
+                </div>
             </div>
-            <div class="premium-price">
+            <div class="col-md-4">
+                <div class="col-md-12" id="p3">
                 <h3 id="premium-macklin">Premium Macklin</h3>
                 <p id="price-3">$1,300</p>
                 <p id="premium-text">
@@ -89,11 +166,21 @@
                     Lorem ipsum dolor.
                     Lorem ipsum.
                 </p>
+                <button type="button" class="btn btn-dark">Explore</button>
+                </div>
             </div>
         </div>
+        <br>
         <footer>
-            <div class="footer">
-                <!--insert footer details here-->
+            <div class="row">
+                <div class="col-md-12" id="footer">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <span>Copyright 2020, Macklin Makers</span>
+                </div>
             </div>
         </footer>
         </div>

@@ -1,99 +1,100 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 
-:root {
-    /*insert color palette*/
-}
-
-.container {
+.container-fluid {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.5;
     margin: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header"
-    "image image image"
-    ". features ."
-    ". video ."
-    ". pricing ."
-    "footer footer footer";
-}
-
-.header {
-    grid-area: header;
     background-color: #eee;
-    display: flex;
-    flex-direction: row;
-    margin-left: 20px;
 }
 
-nav {
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-right: 20px;
+#header {
+    background-color: #ddd;
 }
 
-.image-box {
-    grid-area: image;
+#title {
+    text-align: left;
+}
+
+#links {
+    text-align: right;
+    list-style-type: none;
+    display: inline;
+    vertical-align: middle;
+}
+
+#links li {
+    display: inline;
+}
+
+#image-box {
     background-image: url(https://previews.123rf.com/images/sibfilm/sibfilm1905/sibfilm190500148/122845123-factory-for-the-production-of-robots-modern-robotic-developments-the-disassembled-robot-waves-his-ha.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 600px;
+    height: 50rem;
 }
 
-.splash-box {
-    grid-area: image;
-    background-color: coral;
-    align-content: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
+#splash-box {
+    background-color: rgba(88, 88, 89, 0.98);
+    color: #eee;
+    margin: 25rem 0 10rem 0;
+    padding-bottom: 15px;
+    padding-top: 30px;
     border-radius: 5px;
     border-width: 1rem;
+    text-align: center;
 }
 
-.features {
-    grid-area: features;
+#email {
+    text-align: center;
 }
 
-.how-it-works {
-    grid-area: video;
+#splash-title {
+    margin-top: 1rem;
 }
 
-.pricing {
-    grid-area: pricing;
+#features-title {
+    text-align: center;
+}
+
+#video-title {
+    text-align: center;
+}
+
+#pricing-title {
+    text-align: center;
+}
+
+#pricing {
     align-content: center;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "price1 price2 price3"
-    ;
+
 }
 
-#price1 {
-    grid-area: price1;
+#p1 {
+    border: 1px solid #000;
+    border-radius: 5px;
 }
 
-#price2 {
-    grid-area: price2;
+#p2 {
+    border: 1px solid #000;
+    border-radius: 5px;
 }
 
-#price3 {
-    grid-area: price3;
+#p3 {
+    border: 1px solid #000;
+    border-radius: 5px;
 }
 
-.footer {
-    grid-area: footer;
+#footer {
+    text-align: right;
+    background-color: #ddd;
+}
+
+#footer ul {
+    list-style-type: none;
+    display: inline;
+    vertical-align: middle
 }
