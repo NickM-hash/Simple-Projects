@@ -1,79 +1,87 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Google Page Clone</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/a21836c7a9.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="container-fluid">
-            <header>
-                <div class="row" id="navigation">
-                    <div class="col-md-6" id="nav-left">
-                        <a href="https://about.google/?fg=1&amp;utm_source=google-CA&amp;utm_medium=referral&amp;utm_campaign=hp-header">About</a>
-                        <a href="https://store.google.com/CA?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-CA">Store</a>
-                    </div>
-                    <div class="col-md-6" id="nav-right">
-                        <a href="https://mail.google.com">Gmail</a>
-                        <a href="https://www.google.ca/imghp?hl=en&amp;tab=wi&amp;ogbl">Images</a>
-                        <i class="fas fa-bars"></i>
-                        <img src="images/photo.jpg">
-                    </div>
+
+<head>
+    <title>Google Page Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a21836c7a9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="row" id="navigation">
+                <div class="col-sm-6" id="nav-left">
+                    <a
+                        href="https://about.google/?fg=1&amp;utm_source=google-CA&amp;utm_medium=referral&amp;utm_campaign=hp-header"id="about">About</a>
+                    <a
+                        href="https://store.google.com/CA?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-CA" id="store">Store</a>
                 </div>
-            </header>
-            <content>
-                <div class="row">
-                    <div class="col-md-12" id="logo-line">
-                        <img src="images/googlelogo.png" id="logo">
-                    </div>
+                <div class="col-sm-6" id="nav-right">
+                    <a href="https://mail.google.com" id="gmail">Gmail</a>
+                    <a href="https://www.google.ca/imghp?hl=en&amp;tab=wi&amp;ogbl" id="images">Images</a>
+                    <i class="fas fa-bars"></i>
+                    <img src="images/photo.jpg" id="nick-photo">
                 </div>
-                <div class="row">
-                    <div class="col-md-12" id="search">
-                        <form>
-                            <label id="searchbar" for="searchbox">
-                                <i class="fas fa-search"></i>
-                                <input 
-                                    type="text"
-                                    id="searchbox"
-                                >
-                            </label>
-                        </form>
-                    </div>
+            </div>
+        </header>
+        <content>
+            <div class="row">
+                <div class="col-md-12" id="logo-line">
+                    <img src="images/googlelogo.png" id="logo">
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <button type="button" class="btn btn-secondary">Google Search</button>
-                        <button type="button" class="btn btn-secondary">I'm Feeling Lucky</button>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" id="search">
+                    <form>
+                        <label id="searchbar" for="searchbox">
+                            <i class="fas fa-search" id="glass"></i>
+                            <input type="text" id="searchbox">
+                            <i class="fas fa-microphone" id="microphone"></i>
+                        </label>
+                    </form>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Google offered in: <a href="https://www.google.com/setprefs?sig=0_w0OGd6evYBtov44HHiuSa6WSkIY%3D&hl=fr&source=homepage&sa=X&ved=0ahUKEwjk3-z9jNzoAhUJsp4KHVhmB_gQ2ZgBCBE">Francais</a></p>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" id="button-row">
+                    <button type="button" class="btn btn-secondary" id="button-1">Google Search</button>
+                    <button type="button" class="btn btn-secondary" id="button-2">I'm Feeling Lucky</button>
                 </div>
-            </content>
-            <footer>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Canada</p>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" id="french">
+                    <p>Google offered in: <a
+                            href="https://www.google.com/setprefs?sig=0_w0OGd6evYBtov44HHiuSa6WSkIY%3D&hl=fr&source=homepage&sa=X&ved=0ahUKEwjk3-z9jNzoAhUJsp4KHVhmB_gQ2ZgBCBE">Francais</a>
+                    </p>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <a href="#advertising">Advertising</a>
-                        <a href="#business">Business</a>
-                        <a href="#how-it-works">How Search works</a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#privacy">Privacy</a>
-                        <a href="#terms">Terms</a>
-                        <a href="#settings">Settings</a>
-                    </div>
+            </div>
+        </content>
+        <footer>
+            <div class="row" id="footer-1">
+                <div class="col-md-12" id="canada">
+                    <p>Canada</p>
                 </div>
-            </footer>
-        </div>
-    </body>
+            </div>
+            <div class="row" id="footer-2">
+                <div class="col-sm-6" id="footer-left">
+                    <a href="#advertising">Advertising</a>
+                    <a href="#business">Business</a>
+                    <a href="#how-it-works">How Search works</a>
+                </div>
+                <div class="col-sm-6" id="footer-right">
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                    <a href="#settings">Settings</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>

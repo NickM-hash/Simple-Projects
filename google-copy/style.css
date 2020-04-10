@@ -9,16 +9,117 @@ body {
 
 #navigation a {
     color: black;
+    opacity: 0.75;
+    font-size: 13px;
 }
 
-#nav-left {
-    
+#about {
+    padding-left: 15px;
+}
+
+#store {
+    padding-left: 15px;
 }
 
 #nav-right {
     text-align: right;
 }
 
+#images {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#nick-photo {
+    border-radius: 90px;
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
 #logo-line {
     text-align: center;
+    margin-top: 100px;
+}
+
+#search {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#searchbar {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #9AA0A6;
+    border-radius: 50px;
+    color: #9AA0A6;
+}
+
+#searchbox {
+    border-width: 0;
+    width: 387px;
+    height: 34px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#glass {
+    padding-left: 10px;
+}
+
+#microphone {
+    padding-right: 10px;
+}
+
+#button-row {
+    text-align: center;
+    margin-top: 18px;
+}
+
+#button-1 {
+    background-color: #f2f2f2;
+    color: #5F6368;
+    border: 1px solid #f2f2f2;
+}
+
+#button-2 {
+    background-color: #f2f2f2;
+    color: #5F6368;
+    border: 1px solid #f2f2f2;
+}
+
+#french {
+    text-align: center;
+    font-size: small;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer-1 {
+    background-color: #f2f2f2;
+    bottom: 0;
+}
+
+#canada {
+    color: rgba(0,0,0,.54);
+    padding-left: 15px;
+}
+
+#footer-2 {
+    background-color: #f2f2f2;
+    bottom: 0;
+    font-size: small;
+}
+
+#footer-2 a {
+    color: rgba(0,0,0,.54);
+    padding-left: 15px;
+}
+
+#footer-left {
+    text-align: left;
+    padding-left: 0;
+}
+
+#footer-right {
+    text-align: right;
 }
