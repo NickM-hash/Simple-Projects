@@ -26,15 +26,28 @@ body {
     padding-right: 15px;
 }
 
+.hamburger {
+
+}
+
 .nick-photo {
     border-radius: 90px;
     margin-left: 15px;
     margin-right: 30px;
 }
 
+.--logo-scaled {
+    height: 30px;
+    width: auto;
+}
+
 .logo-line {
     text-align: center;
     margin-top: 100px;
+}
+
+.link-container p {
+    vertical-align: top;
 }
 
 .search {

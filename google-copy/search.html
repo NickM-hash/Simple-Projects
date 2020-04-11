@@ -16,9 +16,11 @@
 <body>
     <div class="container-fluid">
         <header>
-            <div class="row" id="header">
-                <div class="col-sm-8">
-                    <img src="images/googlelogo.png" id="logosearch">
+            <div class="row">
+                <div class="col-sm-1">
+                    <img src="images/googlelogo.png" class="logo --logo-scaled">
+                </div>
+                <div class="col-sm-7">    
                     <form>
                         <label class="searchbar" for="searchbox">
                             <input type="text" class="searchbox">
@@ -27,9 +29,26 @@
                         </label>
                     </form>
                 </div>
-                <div class="col-sm-4" id="nav">
-                    <i class="fas fa-bars"></i>
-                    <img src="images/photo.jpg" id="nick-photo">
+                <div class="col-sm-4 nav-right">
+                    <i class="fas fa-bars hamburgers"></i>
+                    <img src="images/photo.jpg" class="nick-photo">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-6">
+                        <p>All</p>
+                        <p>News</p>
+                        <p>Videos</p>
+                        <p>Images</p>
+                        <p>Maps</p>
+                        <p>More</p>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-3">
                 </div>
             </div>
         </header>
