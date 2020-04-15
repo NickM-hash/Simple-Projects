@@ -9,6 +9,25 @@ body {
     font-size: 13px;
 }
 
+.header-list {
+    padding-bottom: 10px;
+}
+
+.header-list p {
+    display: inline;
+    padding-right: 10px;
+}
+
+.top-margin {
+    margin-top: 10px;
+}
+
+.border-bottom {
+    border: #5F6368;
+    border-bottom: 1px;
+    margin-bottom: 20px;
+}
+
 .about {
     padding-left: 15px;
 }
@@ -95,7 +114,7 @@ body {
 
 .button--grey {
     background-color: #f2f2f2;
-    color: #5F6368;
+    color: #dfe1e5;
     border: 1px solid #f2f2f2;
 }
 
@@ -104,6 +123,64 @@ body {
     font-size: small;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.stories-box {
+    border-color: #dfe1e5;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.story-margin {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.p-margin p {
+    margin-bottom: 0px;
+}
+
+.double-border {
+    border-color: #dfe1e5;
+    border-style: solid;
+    border-width: 1px;
+    border-left: 0px;
+    border-right: 0px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+.search-spacer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search-spacer a {
+    font-size: 18px;
+}
+
+.search-spacer p {
+    font-size: 13px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.center a {
+    text-align: center;
+}
+
+.bottom-links a {
+    display: block;
 }
 
 .footer {
@@ -115,6 +192,7 @@ body {
 
 .footer-1 {
     background-color: #f2f2f2;
+    margin-top: 10px;
 }
 
 .canada {
